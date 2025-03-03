@@ -1,0 +1,21 @@
+.search-box::placeholder{
+    color: #000000;
+}
+.offcanvas.offcanvas-top{
+    border-bottom: 0;
+}
+@media (max-width: 768px){
+    .navbar-brand{
+        width: 45% !important;
+    }    
+}
+@media (max-width: 426px){
+    .navbar-brand{
+        width: 65% !important;
+    }    
+}
+@media (max-width: 375px){
+    .navbar-brand{
+        width: 73% !important;
+    }    
+}

@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Sunflare';
+}
+body{
+    font-family: "Proza Libre", sans-serif;
+}
+.video {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.video h1{
+    letter-spacing: 8px;
+    font-weight: 500;
+}
+.search-box::placeholder{
+    color: #000000;
+}
+.offcanvas.offcanvas-top{
+    border-bottom: 0;
+}
+.carousel-caption{
+    top: 35%;
+    width: 25%;
+}
+@media (max-width: 768px){
+    .navbar-brand{
+        width: 45% !important;
+    }    
+}
+@media (max-width: 426px){
+    .navbar-brand{
+        width: 65% !important;
+    }    
+}
+@media (max-width: 375px){
+    .navbar-brand{
+        width: 73% !important;
+    }    
+}

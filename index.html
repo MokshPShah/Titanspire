@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+
+
+    <!-- Navigation Bar -->
+    <header class="position-absolute w-100 z-3 p-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center justify-content-center">
+                <a class="navbar-brand w-25" href="index.html"><img src="assets/img/Logo/Adobe Express - file.png"
+                        alt="Logo" class="w-50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Sports Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#offcanvas" class="d-none d-lg-flex text-white mx-3" data-bs-toggle="offcanvas">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <div class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle fs-4"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#loginModal" data-bs-toggle="modal">Login</a></li>
+                                <li><a class="dropdown-item" href="#registerModal" data-bs-toggle="modal">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Banner Section -->
+        <div class="position-relative">
+            <div class="video">
+                <video src="assets/Banner Video/banner.mp4" autoplay muted loop></video>
+                <h1 class="carousel-caption display-1 w-100 position-absolute start-0 text-uppercase">Let's change the game</h1>
+            </div>
+        </div>
+
+        <!-- Featured Sports Programs Section -->
+        <section class="featured-programs py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Featured Sports Programs</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3">
+                            <img src="assets/img/Sports_Program/Football_trainer.jpg" class="card-img-top"
+                                alt="Football Training">
+                            <div class="card-body">
+                                <h5 class="card-title">Football Training</h5>
+                                <p class="card-text">Comprehensive football training program for all skill levels. Learn
+                                    techniques, strategies, and improve your game.</p>
+                                <p><strong>Starts:</strong> March 15, 2025</p>
+                                <a href="programs.html" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3">
+                            <img src="assets/img/Sports_Program/basketball.jpg" class="card-img-top"
+                                alt="Basketball Academy">
+                            <div class="card-body">
+                                <h5 class="card-title">Basketball Academy</h5>
+                                <p class="card-text">Join our basketball academy to develop your skills under the
+                                    guidance of professional coaches.</p>
+                                <p><strong>Starts:</strong> April 5, 2025</p>
+                                <a href="programs.html" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3">
+                            <img src="assets/img/Sports_Program/golf.jpg" class="card-img-top" alt="Golf Classes">
+                            <div class="card-body">
+                                <h5 class="card-title">Golf Classes</h5>
+                                <p class="card-text">Learn golf or refine your skills with certified instructors and
+                                    elevate your game to the next level.</p>
+                                <p><strong>Starts:</strong> March 10, 2025</p>
+                                <a href="programs.html" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="services py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-user-friends fa-3x mb-3 text-primary"></i>
+                            <h4>Personal Coaching</h4>
+                            <p>Get one-on-one training sessions with our expert coaches to achieve your fitness goals.
+                            </p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h4>Group Training</h4>
+                            <p>Join our group training sessions for a fun and motivating fitness experience.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-id-card fa-3x mb-3 text-primary"></i>
+                            <h4>Membership Plans</h4>
+                            <p>Choose from our various membership plans to access all our facilities and services.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">What Our Members Say</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/testimonial1.jpg" alt="Client 1" class="rounded-circle me-3"
+                                        width="60">
+                                    <div>
+                                        <h5 class="mb-0">John Doe</h5>
+                                        <p class="text-muted mb-0">Football Program</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">"The coaching at SportsHub has significantly improved my football
+                                    skills. The trainers are professional and supportive."</p>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/testimonial2.jpg" alt="Client 2" class="rounded-circle me-3"
+                                        width="60">
+                                    <div>
+                                        <h5 class="mb-0">Jane Smith</h5>
+                                        <p class="text-muted mb-0">Swimming Classes</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">"I was afraid of water before joining SportsHub. Now I can swim
+                                    confidently. The instructors are patient and encouraging."</p>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/testimonial3.jpg" alt="Client 3" class="rounded-circle me-3"
+                                        width="60">
+                                    <div>
+                                        <h5 class="mb-0">Mike Johnson</h5>
+                                        <p class="text-muted mb-0">Personal Training</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">"The personal training sessions have transformed my fitness level.
+                                    My trainer created a customized plan that worked perfectly for me."</p>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta py-5 bg-primary text-white">
+            <div class="container text-center">
+                <h2>Ready to Start Your Sports Journey?</h2>
+                <p class="lead">Join SportsHub today and take your first step towards fitness and excellence.</p>
+                <a href="register.html" class="btn btn-light btn-lg mt-3">Join Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>SportsHub</h5>
+                    <p>Your destination for sports programs, personal training, and fitness guidance.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="programs.html" class="text-white">Programs</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2025 SportsHub. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-2">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Create Account</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                                <div class="form-text">Password must be at least 8 characters long and include a number
+                                    and special character.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                            <div class="form-text">You must be at least 18 years old to register.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female"
+                                        value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                    <label class="form-check-label" for="other">Other</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="prefer-not-to-say"
+                                        value="prefer-not-to-say">
+                                    <label class="form-check-label" for="prefer-not-to-say">Prefer not to say</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Interests (Select all that apply)</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="football">
+                                        <label class="form-check-label" for="football">Football</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="basketball">
+                                        <label class="form-check-label" for="basketball">Basketball</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cricket">
+                                        <label class="form-check-label" for="cricket">Cricket</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="tennis">
+                                        <label class="form-check-label" for="tennis">Tennis</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="golf">
+                                        <label class="form-check-label" for="golf">Golf</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="hockey">
+                                        <label class="form-check-label" for="hockey">Hockey</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsAgree" required>
+                            <label class="form-check-label" for="termsAgree">I agree to the
+                                <a href="#" class="text-decoration-none">Terms of Service</a> and
+                                <a href="#" class="text-decoration-none">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter">
+                            <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Create Account</button>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="text-center">
+                        <p>Or register with:</p>
+                        <button class="btn btn-outline-primary me-2"><i class="bi bi-google"></i> Google</button>
+                        <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Already have an account? <a href="#loginModal" data-bs-toggle="modal"
+                                class="text-decoration-none">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Bar Offcanvas -->
+    <div class="offcanvas offcanvas-top bg-transparent" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center w-100 h-100">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-7">
+                        <input type="text" placeholder="Search" class="bg-white text-black form-control search-box">
+                    </div>
+                    <div class="col-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Login</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Enter your name or email: *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name or email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Enter your password: *</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <hr>
+                    <div class="text-center">
+                        <p>Or login with:</p>
+                        <button class="btn btn-outline-primary me-2"><i class="bi bi-google"></i> Google</button>
+                        <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="#registerModal" data-bs-toggle="modal"
+                                class="text-decoration-none">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
