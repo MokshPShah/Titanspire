@@ -7,6 +7,10 @@ h1{
 h2, h3, h4, h5, h6{
     letter-spacing: 3px;
 }
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 body{
     font-family: "Proza Libre", sans-serif;
 }
