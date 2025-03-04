@@ -10,7 +10,7 @@ h2, h3, h4, h5, h6{
 body{
     font-family: "Proza Libre", sans-serif;
 }
-.navbar-brand img{
+.navbar-brand img, .logo{
     width: 220px;
 }
 .search{
@@ -49,6 +49,12 @@ body{
     left: 24%;
     width: 54%;
     backdrop-filter: blur(10px);
+}
+.modal-dialog{
+    max-width: 610px;
+}
+.modal-content{
+    padding: 25px;
 }
 @media (max-width: 768px){
     .navbar-brand{
