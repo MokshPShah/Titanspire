@@ -1,8 +1,24 @@
-h1{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Sunflare';
+}
+h1{
+    letter-spacing: 8px;
+}
+h2, h3, h4, h5, h6{
+    letter-spacing: 3px;
 }
 body{
     font-family: "Proza Libre", sans-serif;
+}
+.navbar-brand img{
+    width: 220px;
+}
+.search{
+    font-size: 18px;
+}
+.user{
+    margin-top: -4px;
+    font-size: 24px;
 }
 .video {
     width: 100%;
@@ -15,7 +31,6 @@ body{
     object-fit: cover;
 }
 .video h1{
-    letter-spacing: 8px;
     font-weight: 500;
 }
 .search-box::placeholder{
@@ -27,6 +42,13 @@ body{
 .carousel-caption{
     top: 35%;
     width: 25%;
+}
+.banner{
+    background-color: rgba(0, 255, 255, 0.01);
+    height: max-content;
+    left: 24%;
+    width: 54%;
+    backdrop-filter: blur(10px);
 }
 @media (max-width: 768px){
     .navbar-brand{
