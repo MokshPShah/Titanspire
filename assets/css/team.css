@@ -1,0 +1,7 @@
+.banner{
+    left: 40%;
+    top: 30%;
+    height: max-content;
+    width: max-content;
+    backdrop-filter: blur(5px);
+}
