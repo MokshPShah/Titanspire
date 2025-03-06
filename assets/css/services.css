@@ -1,0 +1,22 @@
+.member-banner{
+    background-image: url('../img/Our-staff/staff-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.types{
+    margin-left: calc(-1 * 5px);
+    margin-right: calc(-1 * 5px);
+    transition: all 0.5s;
+    
+}
+.type{
+    transition: all 0.5s;
+}
+.types:hover, .type:hover{
+    background-color: var(--secondary-color);
+    transform: scale(1.05)
+}
+.price{
+    margin-top:100px;
+}
