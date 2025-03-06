@@ -8,34 +8,42 @@
     --text-color: #000000b0;
     --text-color-rgba: 0, 0, 0, 0.69;
 }
-.primary-color{
+.primary-color {
     color: var(--primary-color);
 }
-.secondary-color{
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+.secondary-color {
     color: var(--secondary-color);
 }
-.bg-color{
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+.bg-color {
     background-color: var(--bg-color);
 }
-.text-color{
+.text-color {
     color: var(--text-color);
 }
-.btn-primary{
+.btn-primary {
     color: white;
     background-color: transparent;
     border: 1px solid white;
+    transition: all 0.5s;
 }
-.btn-primary:hover{
-    color: var(--text-color) !important;
-    background-color: var(--secondary-color) !important;
-    border: 1px solid var(--secondary-color) !important;
+.btn-primary:hover {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
-.btn-secondary{
+.btn-secondary {
     color: var(--text-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--text-color);
+    transition: all 0.5s;
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
     color: var(--secondary-color);
     background-color: var(--bg-color);
     border: 1px solid var(--secondary-color);
@@ -48,6 +56,10 @@ h1 {
 }
 h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
 }
 .classes img {
     width: 100%;
@@ -65,7 +77,7 @@ h2, h3, h4, h5, h6 {
 .pb-120 {
     padding-bottom: 120px;
 }
-body{
+body {
     font-family: "Proza Libre", sans-serif;
 }
 .navbar-brand img, .logo {
@@ -127,7 +139,7 @@ body{
 .appear-top {
     animation: appear-top linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 25%;
 }
 @keyframes appear-bottom {
     from {
@@ -142,7 +154,7 @@ body{
 .appear-bottom {
     animation: appear-bottom linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 25%;
 }
 @keyframes appear-right {
     from {
@@ -157,7 +169,7 @@ body{
 .appear-right {
     animation: appear-right linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 25%;
 }
 @keyframes appear-left {
     from {
@@ -172,7 +184,39 @@ body{
 .appear-left {
     animation: appear-left linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 25%;
+}
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+}
+.scroll-content {
+    display: inline-block;
+    animation: scroll-left 40s linear infinite;
+}
+.scroll-content img {
+    height: 25px;
+    width: auto;
+    margin: 0 70px;
+}
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.location {
+    background-image: url('../img/location/location.jpg');
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 60vh;
 }
 @media (max-width: 768px) {
     .navbar-brand {
