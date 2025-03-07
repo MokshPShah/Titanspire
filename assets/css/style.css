@@ -71,15 +71,12 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sunflare';
 }
-h1 {
+h2 {
     letter-spacing: 6px;
+    font-size: 32px;
 }
 h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
-}
-body {
-    width: 100vw;
-    overflow-x: hidden;
 }
 .classes img {
     width: 100%;
@@ -99,6 +96,7 @@ body {
 }
 body {
     font-family: "Proza Libre", sans-serif;
+    overflow-x: hidden;    
 }
 .navbar-brand img, .logo {
     width: 220px;
@@ -236,20 +234,96 @@ body {
     background-size: cover;
     background-position: left bottom;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 420px;
 }
 @media (max-width: 768px) {
     .navbar-brand {
         width: 45% !important;
     }
+    .location{
+        height: 340px;
+    }
 }
 @media (max-width: 426px) {
-    .navbar-brand {
-        width: 65% !important;
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4{
+        font-size: 18px !important;
+    }
+    h5{
+        font-size: 16px !important;
+    }
+    p, span, a{
+        font-size: 14px !important;
+    }
+    .navbar-brand img{
+        width: 80% !important;
+    }
+    .banner{
+        left: 15%;
+        width: 70vw;
+        padding: 20px 10px 10px !important;
+    }
+    .video video{
+        height: 100vh;
+    }
+    .btn{
+        font-size: 12px !important;
+    }
+    .location{
+        height: 320px;
+    }
+    .modal-dialog {
+        max-width: 450px;
     }
 }
 @media (max-width: 375px) {
-    .navbar-brand {
-        width: 73% !important;
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4{
+        font-size: 18px !important;
+    }
+    h5{
+        font-size: 16px !important;
+    }
+    p, span, a{
+        font-size: 12px !important;
+    }
+    .navbar-brand img{
+        width: 60% !important;
+    }
+    .banner{
+        left: 10%;
+        width: 84vw;
+        padding: 20px 10px 10px !important;
+    }
+    .video video{
+        height: 100vh;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .location{
+        height: 320px;
+    }
+    .user{
+        font-size: 20px !important;
+    }
+    .modal-dialog {
+        max-width: 450px;
     }
 }
