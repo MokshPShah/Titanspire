@@ -236,6 +236,10 @@ body {
     background-repeat: no-repeat;
     height: 420px;
 }
+.back-to-top{
+    bottom: 20px;
+    right: 30px;
+}
 @media (max-width: 768px) {
     .navbar-brand {
         width: 45% !important;
