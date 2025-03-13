@@ -5,6 +5,7 @@
     --secondary-color-rgb: 194, 252, 133;
     --bg-color: #1c4040;
     --bg-color-rgb: 28, 64, 64;
+    --animation-text-color:#00000040;
     --text-color: #000000b0;
     --text-color-rgba: 0, 0, 0, 0.69;
 }
@@ -20,11 +21,17 @@
 .bg-secondary {
     background-color: var(--secondary-color) !important;
 }
+.bg-text-color{
+    color: var(--bg-color);
+}
 .bg-color {
     background-color: var(--bg-color);
 }
 .text-color {
     color: var(--text-color);
+}
+.animation-text-color{
+    color: var(--animation-text-color);
 }
 .btn-primary {
     color: white;
@@ -68,6 +75,15 @@
     background-color: transparent;
     border: 1px solid black;
 }
+.btn-quinary{
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+.btn-quinary:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sunflare';
 }
@@ -80,6 +96,7 @@ h2, h3, h4, h5, h6 {
 body {
     width: 100vw;
     overflow-x: hidden;
+    font-family: "Proza Libre", sans-serif;
 }
 .classes img {
     width: 100%;
@@ -97,7 +114,13 @@ body {
 .pb-120 {
     padding-bottom: 120px;
 }
-body {
+.font-14{
+    font-size: 14px;
+}
+.font-20{
+    font-size: 20px;
+}
+.discription-text{
     font-family: "Proza Libre", sans-serif;
 }
 .navbar-brand img, .logo {
