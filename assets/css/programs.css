@@ -1,0 +1,17 @@
+.banner{
+    background-image: url('../img/Sports_Program/Program_Page/Banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+    font-weight: bolder !important;
+    font-size: 20px;
+}
