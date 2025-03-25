@@ -10,79 +10,115 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/programs.css">
+    <style>
+        .banner-secondary{
+            background-image: url('./assets/img/Sports_Program/Program_Page/Banner.jpg');
+        }
+
+        .section {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        .bi::before,
+        [class*=" bi-"]::before,
+        [class^=bi-]::before {
+            font-weight: bolder !important;
+            font-size: 20px;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: '\F27B';
+            font-family: 'bootstrap-icons' !important;
+            color: var(--primary-color);
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Back-to-top -->
+    <section class="back-to-top z-3">
+        <div class="button">
+            <a href="#" class="bg-secondary p-3 rounded-1 text-color"> <i class="bi bi-arrow-up"></i> </a>
+        </div>
+    </section>
     <!-- Navbar Section -->
-    <header>
+    <header class="w-100 z-3 px-2 bg-primary">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid align-items-center justify-content-center">
+            <div class="container-fluid align-items-lg-center justify-content-lg-center">
                 <a class="navbar-brand" href="index.html"><img src="assets/img/Logo/Adobe Express - file.png"
                         alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Right-side icons (Search & User) - Always Fixed -->
+                <div class="d-flex align-items-center order-lg-2 ms-auto">
+                    <!-- Search Icon -->
+                    <a href="#offcanvas" class="nav-link text-black d-none d-lg-block" data-bs-toggle="offcanvas">
+                        <i class="bi bi-search search"></i>
+                    </a>
+                    <!-- User Dropdown -->
+                    <div class="nav-item dropdown mx-2 mt-2">
+                        <a class="nav-link text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-fill user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#loginModal" data-bs-toggle="modal">Login</a></li>
+                            <li><a class="dropdown-item" href="#registerModal" data-bs-toggle="modal">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="filter: invert(100%) brightness(80%);"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link text-black" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="programs.html">Sports Program</a>
+                            <a class="nav-link text-black active" href="programs.html">Sports Program</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link text-black" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team.html">Team</a>
+                            <a class="nav-link text-black" href="team.html">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link text-black" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link text-black" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link text-black" href="contact.html">Contact</a>
                         </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="#offcanvas" class="nav-link d-none d-lg-flex search text-dark"
-                                data-bs-toggle="offcanvas">
-                                <i class="bi bi-search"></i>
-                            </a>
-                        </li>
-                        <div class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link user" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                                    <i class="bi bi-person-fill"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#loginModal" data-bs-toggle="modal">Login</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#registerModal"
-                                            data-bs-toggle="modal">Register</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <!-- Main Section -->
     <main>
         <!-- Banner Section -->
-
-        <section class="banner text-center text-white">
-            <p>Programs</p>
-            <h1 class="display-4 fw-bold">PROGRAMS FOR EVERYONE</h1>
+        <section>
+            <div class="banner-secondary  py-120 text-center text-white">
+                <div class="content">
+                    <p class="mt-4">Programs</p>
+                    <h1 class="display-4 text-uppercase my-4">PROGRAMS FOR EVERYONE</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Programs</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </section>
 
         <!-- Introduction -->
@@ -273,7 +309,8 @@
                 <p>Kids</p>
                 <h3>Daycare</h3>
                 <div class="d-flex justify-content-center align-items-center">
-                    <p class="w-75 my-4">The Eagle Elite Daycare Program is for children ages 16 months to 2.6 years. Each
+                    <p class="w-75 my-4">The Eagle Elite Daycare Program is for children ages 16 months to 2.6 years.
+                        Each
                         Toddler and 2’s classroom have 12 children and 3 teachers. With access to Eagle Elite’
                         facilities, our toddler and 2’s program offers unique learning opportunities and activities. In
                         natural, authentic ways, we offer students the opportunity to learn and expand their language,
@@ -283,7 +320,72 @@
             </div>
         </section>
     </main>
-
+    <!-- footer -->
+    <footer class="bg-primary text-color pt-120 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html"><img src="assets/img/Logo/Adobe Express - file.png" alt="logo"
+                            class="logo"></a>
+                    <p>Your destination for sports programs, personal training, and fitness guidance.</p>
+                    <div class="social-icons">
+                        <a href="#" class=" me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class=" me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class=" me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="text-black">Quick Links</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li><a href="index.html" class="text-color text-decoration-none">Home</a></li>
+                                <li><a href="programs.html" class="text-color text-decoration-none">Programs</a></li>
+                                <li><a href="services.html" class="text-color text-decoration-none">Services</a></li>
+                                <li><a href="team.html" class="text-color text-decoration-none">Teams</a></li>
+                                <li><a href="blog.html" class="text-color text-decoration-none">Blogs</a></li>
+                                <li><a href="about.html" class="text-color text-decoration-none">About Us</a></li>
+                                <li><a href="contact.html" class="text-color text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-black">Programs</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li><a href="programs.html" class="text-color text-decoration-none">Sports</a></li>
+                                <li><a href="programs.html" class="text-color text-decoration-none">Fitness</a></li>
+                                <li><a href="programs.html" class="text-color text-decoration-none">Rent</a></li>
+                                <li><a href="tprograms.html" class="text-color text-decoration-none">Camps</a></li>
+                                <li><a href="programs.html" class="text-color text-decoration-none">Daycare</a></li>
+                                <li><a href="programs.html" class="text-color text-decoration-none">Aquatics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-black">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-secondary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2025 Titanspire. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-color text-decoration-none me-2">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="#" class="text-color text-decoration-none ms-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Register Modal -->
     <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog">
