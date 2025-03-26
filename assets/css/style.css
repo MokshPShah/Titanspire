@@ -11,100 +11,81 @@
     --black-color: #000000;
     --black-color-rgb: 0, 0, 0;
 }
-
 .primary-color {
     color: var(--primary-color);
 }
-
 .bg-primary {
     background-color: var(--primary-color) !important;
 }
-
 .secondary-color {
     color: var(--secondary-color);
 }
-
 .bg-secondary {
     background-color: var(--secondary-color) !important;
 }
-
 .bg-text-color {
     color: var(--bg-color);
 }
-
 .bg-color {
     background-color: var(--bg-color);
 }
-
 .text-color {
     color: var(--text-color);
 }
-
 .animation-text-color {
     color: var(--animation-text-color);
 }
-
 .btn-primary {
     color: white;
     background-color: transparent;
     border: 1px solid white;
     transition: all 0.5s;
 }
-
 .btn-primary:hover {
     color: var(--text-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
-
 .btn-secondary {
     color: var(--text-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--text-color);
     transition: all 0.5s;
 }
-
 .btn-secondary:hover {
     color: var(--secondary-color);
     background-color: var(--bg-color);
     border: 1px solid var(--secondary-color);
 }
-
 .btn-tertiary {
     color: black;
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
-
 .btn-tertiary:hover {
     color: var(--text-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
-
 .btn-quaternary {
     color: white;
     background-color: var(--bg-color);
     border: 1px solid var(--bg-color);
 }
-
 .btn-quaternary:hover {
     color: black;
     background-color: transparent;
     border: 1px solid black;
 }
-
 .btn-quinary {
     color: var(--text-color);
     background-color: var(--secondary-color);
 }
-
 .btn-quinary:hover {
     color: var(--secondary-color);
     background-color: transparent;
     border: 1px solid var(--secondary-color);
 }
-
 h1,
 h2,
 h3,
@@ -113,17 +94,13 @@ h5,
 h6 {
     font-family: 'Sunflare';
 }
-
 h1 {
-
     letter-spacing: 6px;
 }
-
 h2 {
     letter-spacing: 6px;
     font-size: 32px;
 }
-
 h2,
 h3,
 h4,
@@ -131,7 +108,6 @@ h5,
 h6 {
     letter-spacing: 3px;
 }
-
 .bi::before,
 [class*=" bi-"]::before,
 [class^=bi-]::before {
@@ -143,86 +119,78 @@ body {
     overflow-x: hidden;
     width: 100vw;
 }
-
 .classes img {
     width: 100%;
 }
-
+.title{
+    font-size: 3.5rem;
+}
 .w-30 {
     width: 30%;
 }
-
 .py-120 {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 .pt-120 {
     padding-top: 120px;
 }
-
 .pb-120 {
     padding-bottom: 120px;
 }
-
 .font-14 {
     font-size: 14px;
 }
-
 .font-20 {
     font-size: 20px;
 }
-
 .discription-text {
     font-family: "Proza Libre", sans-serif;
     overflow-x: hidden;
 }
-
+.btn-rounded{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 33px;
+    text-align: center;
+}
 .navbar-brand img,
 .logo {
     width: 220px;
 }
-
 .bi-search::before {
     font-size: 22px !important;
     margin: 5px 10px 0 0;
 }
-
 .user.bi-person-fill::before {
     font-size: 26px;
 }
-
 .video,
 .member-banner {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-
 .video video,
 .member-banner img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 .video h1 {
     font-weight: 500;
 }
-
 .search-box::placeholder {
     color: #000000;
 }
-
 .offcanvas.offcanvas-top {
     border-bottom: 0;
 }
-
 .carousel-caption {
     top: 35%;
     width: 25%;
 }
-
 .banner {
     background-color: rgba(0, 255, 255, 0.01);
     height: max-content;
@@ -230,110 +198,93 @@ body {
     width: 54%;
     backdrop-filter: blur(10px);
 }
-
 .modal-dialog {
     max-width: 610px;
 }
-
 .modal-content {
     padding: 25px;
 }
-
-.banner-secondary {
+.sub-header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 1;
 }
-
-.banner-secondary::after {
+.sub-header::after {
     content: '';
-    background-color: rgba(var(--black-color-rgb), 0.25);
+    background-color: rgba(var(--black-color-rgb), 0.50);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
 }
-
-.banner-secondary .content {
+.sub-header .content {
     position: relative;
     z-index: 2;
 }
-
 @keyframes appear-top {
     from {
         opacity: 0;
         transform: translateY(-100px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 .appear-top {
     animation: appear-top linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
-
 @keyframes appear-bottom {
     from {
         opacity: 0;
         transform: translateY(100px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 .appear-bottom {
     animation: appear-bottom linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
-
 @keyframes appear-right {
     from {
         opacity: 0;
         transform: translateX(100px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-
 .appear-right {
     animation: appear-right linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
-
 @keyframes appear-left {
     from {
         opacity: 0;
         transform: translateX(-100px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-
 .appear-left {
     animation: appear-left linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
-
 .scroll-container {
     width: 100%;
     overflow: hidden;
@@ -342,28 +293,23 @@ body {
     position: relative;
     display: flex;
 }
-
 .scroll-content {
     display: inline-block;
     animation: scroll-left 40s linear infinite;
 }
-
 .scroll-content img {
     height: 25px;
     width: auto;
     margin: 0 70px;
 }
-
 @keyframes scroll-left {
     from {
         transform: translateX(0%);
     }
-
     to {
         transform: translateX(-50%);
     }
 }
-
 .location {
     background-image: url('../img/location/location.jpg');
     background-size: cover;
@@ -371,143 +317,119 @@ body {
     background-repeat: no-repeat;
     height: 420px;
 }
-
 .back-to-top {
     bottom: 20px;
     right: 30px;
 }
-
 @media (max-width: 768px) {
     .navbar-brand {
         width: 45% !important;
     }
-
-    .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 30px;
-        backdrop-filter: blur(10px);
+    .title{
+        font-size: 2rem;
     }
-
     .location {
         height: 340px;
     }
-
     .carousel-caption {
         top: 25%;
     }
+    .game-text{
+        font-size: 15px;
+    }
 }
-
 @media (max-width: 426px) {
     h1 {
         font-size: 24px !important;
     }
-
     h2 {
         font-size: 22px !important;
     }
-
     h3 {
         font-size: 20px !important;
     }
-
     h4 {
         font-size: 18px !important;
     }
-
     h5 {
         font-size: 16px !important;
     }
-
     p,
     span,
     a {
         font-size: 14px !important;
     }
-
     .navbar-brand img {
         width: 80% !important;
     }
-
     .banner {
         left: 15%;
         width: 70vw;
         padding: 20px 10px 10px !important;
     }
-
     .video video {
         height: 100vh;
     }
-
     .btn {
         font-size: 12px !important;
     }
-
     .location {
         height: 320px;
     }
-
     .modal-dialog {
         max-width: 450px;
     }
-
     .carousel-caption {
         top: 25%;
     }
 }
-
 @media (max-width: 375px) {
     h1 {
         font-size: 24px !important;
     }
-
     h2 {
         font-size: 22px !important;
     }
-
     h3 {
         font-size: 20px !important;
     }
-
     h4 {
         font-size: 18px !important;
     }
-
     h5 {
         font-size: 16px !important;
     }
-
     p,
     span,
     a {
         font-size: 12px !important;
     }
-
     .navbar-brand img {
         width: 60% !important;
     }
-
     .banner {
         left: 10%;
         width: 84vw;
         padding: 20px 10px 10px !important;
     }
-
     .video video {
         height: 100vh;
     }
-
+    .title{
+        font-size: 1rem !important;
+    }
     .btn {
         font-size: 12px;
     }
-
     .location {
         height: 320px;
     }
-
+    .game-text{
+        font-size: 12px !important;
+    }
     .user {
         font-size: 20px !important;
     }
-
     .modal-dialog {
         max-width: 450px;
     }

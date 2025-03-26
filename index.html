@@ -16,6 +16,14 @@
             right: 50px;
             bottom: 50px;
         }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 30px;
+                backdrop-filter: blur(10px);
+            }
+        }
     </style>
 </head>
 
@@ -91,7 +99,7 @@
             <div class="video">
                 <video src="assets/Banner Video/banner.mp4" autoplay muted loop></video>
                 <div class="carousel-caption col-md-4 col-12 px-3 py-5 rounded-4 position-absolute banner">
-                    <h1 class="display-4 text-uppercase title">Let's change the game</h1>
+                    <h1 class="text-uppercase title">Let's change the game</h1>
                     <p class="mx-4 d-none d-lg-block">Our facility is more than a place to practice and play. We proudly
                         unite people
                         through sports, fostering community and camaraderie, and creating lasting connections. Join us
@@ -114,7 +122,7 @@
                         <p class="text-muted mb-3">Explore Gymnastics, Ninja, Soccer, Basketball, Volleyball, Tennis +
                             More!</p>
                         <p class="text-muted w-75 mx-auto text-center">12-week Trimester Starts in September.</p>
-                        <a href="#" class="btn-secondary text-decoration-none py-2 px-3">Learn More</a>
+                        <a href="#" class="btn-secondary btn text-decoration-none py-2 px-3">Learn More</a>
                     </div>
                     <div class="col-lg-4 w-30 appear-right d-none d-lg-block">
                         <img src="assets/img/classes/2.jpg" alt="class-2" class="rounded-3">
@@ -136,10 +144,10 @@
                             <img src="assets/img/services/Personal_Coaching.jpg" class="card-img-top"
                                 alt="Football Training">
                             <div class="card-body">
-                                <h5 class="card-title fw-semibold mb-3">Coaching & Training Services</h5>
+                                <h5 class="card-title fw-semibold mb-3">Coaching Services</h5>
                                 <p class="card-text">Get one-on-one training sessions with our expert coaches to achieve
                                     your fitness goals.</p>
-                                <a href="services.html" class="btn btn-secondary rounded-0 py-2 px-3">Learn More</a>
+                                <a href="services.html" class="btn btn-secondary py-2 px-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +159,7 @@
                                 <h5 class="card-title fw-semibold mb-3">Membership Plans</h5>
                                 <p class="card-text">Join our group training sessions for a fun and motivating fitness
                                     experience.</p>
-                                <a href="services.html" class="btn btn-secondary rounded-0 py-2 px-3">Learn More</a>
+                                <a href="services.html" class="btn btn-secondary py-2 px-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +171,7 @@
                                 <h5 class="card-title fw-semibold mb-3">Health & Fitness Services</h5>
                                 <p class="card-text">Join our group training sessions for a fun and motivating fitness
                                     experience.</p>
-                                <a href="services.html" class="btn btn-secondary rounded-0 py-2 px-3">Learn More</a>
+                                <a href="services.html" class="btn btn-secondary py-2 px-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -186,9 +194,9 @@
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold">Football Training</h5>
                                 <p class="card-text">Comprehensive football training program for all skill levels. Learn
-                                    techniques, strategies, and improve your game.</p>
+                                    techniques, strategies.</p>
                                 <p><strong>Starts:</strong> March 15, 2025</p>
-                                <a href="programs.html" class="btn btn-secondary rounded-0 py-2 px-3">View Details</a>
+                                <a href="programs.html" class="btn btn-secondary py-2 px-3">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +209,7 @@
                                 <p class="card-text">Join our basketball academy to develop your skills under the
                                     guidance of professional coaches.</p>
                                 <p><strong>Starts:</strong> April 5, 2025</p>
-                                <a href="programs.html" class="btn btn-secondary rounded-0 py-2 px-3">View Details</a>
+                                <a href="programs.html" class="btn btn-secondary py-2 px-3">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -213,7 +221,7 @@
                                 <p class="card-text">Learn golf or refine your skills with certified instructors and
                                     elevate your game to the next level.</p>
                                 <p><strong>Starts:</strong> March 10, 2025</p>
-                                <a href="programs.html" class="btn btn-secondary rounded-0 py-2 px-3">View Details</a>
+                                <a href="programs.html" class="btn btn-secondary py-2 px-3">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +278,7 @@
                     <div class="d-flex justify-content-between mb-5">
                         <h3>Titanspire News</h3>
                         <span>View More
-                            <i class="bi bi-arrow-right bg-secondary text-color py-1 px-2 rounded-circle"></i></span>
+                            <i class="bi bi-arrow-right bg-secondary text-color d-inline-block btn-rounded"></i></span>
                     </div>
                 </div>
                 <div class="row flex-column flex-md-row">
@@ -286,7 +294,7 @@
                                     <p class="text-muted">As the crisp autumn air fills the skies and the leaves start
                                         to turn brilliant shades of red and gold, it’s time...</p>
                                     <a href="blog.html" class="text-color text-decoration-none">View More <i
-                                            class="bi bi-arrow-right bg-secondary text-black py-1 px-2 rounded-circle"></i></a>
+                                            class="bi bi-arrow-right bg-secondary text-black d-inline-block btn-rounded"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +311,7 @@
                                     <p class="text-muted">As the crisp autumn air fills the skies and the leaves start
                                         to turn brilliant shades of red and gold, it’s time...</p>
                                     <a href="blog.html" class="text-color text-decoration-none">View More <i
-                                            class="bi bi-arrow-right bg-secondary text-black py-1 px-2 rounded-circle"></i></a>
+                                            class="bi bi-arrow-right bg-secondary text-black d-inline-block btn-rounded"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +428,7 @@
                         <i class="bi bi-geo-alt-fill display-3 secondary-color"></i>
                         <p class="text-uppercase mt-3 fs-3 fw-semibold">Location</p>
                         <p class="">2200 SW Cedar Hills Blvd. Portland, Oregon 97225</p>
-                        <span><i class="bi bi-arrow-right bg-secondary text-color py-1 px-2 rounded-circle me-2"></i>
+                        <span><i class="bi bi-arrow-right bg-secondary text-color d-inline-block btn-rounded me-2"></i>
                             Get Directions</span>
                     </div>
                     <div class="col-6 pb-5 d-none d-lg-block">
@@ -460,7 +468,7 @@
             <div class="container text-center">
                 <h2>Ready to Start Your Sports Journey?</h2>
                 <p class="lead my-4">Join SportsHub today and take your first step towards fitness and excellence.</p>
-                <a href="#registerModal" data-bs-toggle="modal" class="btn btn-primary rounded-0 btn-lg">Join
+                <a href="#registerModal" data-bs-toggle="modal" class="btn btn-primary btn-lg">Join
                     Now</a>
             </div>
         </section>
